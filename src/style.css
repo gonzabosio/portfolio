@@ -1,0 +1,60 @@
+/* Default theme(dark) */
+:root {
+  font-family: monospace;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background-color: #012730;
+  --text-color: #F0EDCC;
+  --card-color: #043c49;
+  --button-text-color: #F0EDCC;
+  --navbar-bg-color: #043c49;
+}
+
+/* Light theme  */
+[theme='light'] {
+  --background-color: #88afaf;
+  --text-color: #012730;
+  --card-color: #c5e7e7;
+  --button-text-color: #c5e7e7;
+  --navbar-bg-color: #c5e7e7;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#app {
+  padding: 16px;
+}
+
+.card {
+  width: fit-content;
+  padding: 40px;
+  border-radius: 12px;
+  background-color: var(--card-color);
+  margin-bottom: 12px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+button {
+  color: var(--button-text-color);
+  background-color: #4f7780;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+
+  &:hover {
+    background-color: #3d6870;
+  }
+}
