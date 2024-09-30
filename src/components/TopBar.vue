@@ -23,7 +23,7 @@ import { ref } from 'vue';
 </script>
 
 <template>
-    <div id="nav-bar">
+    <div class="container">
         <nav id="nav-links">
             <RouterLink to="/" :class="[currentRoute === 'aboutme' ? 'nav-item-selected' : 'nav-item']">
                 {{ t('me') }}
@@ -42,7 +42,7 @@ import { ref } from 'vue';
 </template>
 
 <style scoped>
-#nav-bar {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,21 +114,19 @@ import { ref } from 'vue';
 
     #top-end {
         position: static;
-        /* Remove absolute positioning */
         display: flex;
         justify-content: center;
-        width: 100%;
     }
 }
 
 @media (max-width: 520px) {
-    #nav-bar {
+    .container {
         justify-content: space-between;
     }
 }
 
 @media (max-width: 445px) {
-    #nav-bar {
+    .container {
         justify-content: space-between;
     }
 

@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n';
 const { locale, t } = useI18n()
 const toggleLanguage = () => {
-    console.log(locale.value)
     locale.value = locale.value === 'en' ? 'es' : 'en'
 }
 </script>

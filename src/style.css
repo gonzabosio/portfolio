@@ -34,6 +34,7 @@ body {
 
 #app {
   padding: 16px;
+  box-sizing: border-box;
 }
 
 .card {

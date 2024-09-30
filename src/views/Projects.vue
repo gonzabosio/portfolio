@@ -1,17 +1,18 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
+import CardsProjects from '../components/CardsProjects.vue';
 
 const { t } = useI18n()
 </script>
 
 <template>
-    <div id="container">
-        <h1>{{ t('projects') }}</h1>
+    <div class="container">
+        <CardsProjects />
     </div>
 </template>
 
 <style scoped>
-#container {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
