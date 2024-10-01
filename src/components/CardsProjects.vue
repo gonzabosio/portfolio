@@ -1,12 +1,57 @@
+<script setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
+
+import Website from './Links/Website.vue'
+import GitHubRepo from './Links/GitHubRepo.vue';
+</script>
+
 <template>
     <div class="container">
         <div class="row-container">
-            <div class="col row-1-col-1">Project 1</div>
-            <div class="col row-1-col-2">Project 2</div>
+            <div class="col row-1-col-1">
+                <h2>ChatBox</h2>
+                <p>{{ t('chatbox.a') }}
+                </p>
+                <p>{{ t('chatbox.b') }}</p>
+                <p>{{ t('chatbox.c') }}</p>
+                <div class="links">
+                    <a href="https://chatbox-front.onrender.com" target="_blank">
+                        <Website />
+                    </a>
+                    <a href="https://github.com/gonzabosio/chatbox" target="_blank">
+                        <GitHubRepo />
+                    </a>
+                </div>
+            </div>
+            <div class="col row-1-col-2">
+                <h2>Project 2</h2>
+                <div class="links">
+                    <a href="" target="_blank">
+                        <GitHubRepo />
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="row-container">
-            <div class="col row-2-col-1">Project 3</div>
-            <div class="col row-2-col-2">Project 4</div>
+            <div class="col row-2-col-1">
+                <h2>Gobo-Patcher</h2>
+                <p>{{ t('patcher.a') }}</p>
+                <p>{{ t('patcher.b') }}</p>
+                <div class="links">
+                    <a href="https://github.com/gonzabosio/gobo-patcher" target="_blank">
+                        <GitHubRepo />
+                    </a>
+                </div>
+            </div>
+            <div class="col row-2-col-2">
+                <h2>Project 4</h2>
+                <div class="links">
+                    <a href="" target="_blank">
+                        <GitHubRepo />
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -14,10 +59,10 @@
 <style scoped>
 .container {
     display: flex;
-    width: 1100px;
-    height: 500px;
+    width: 1200px;
+    height: fit-content;
     border-radius: 1em;
-    padding: 2em;
+    padding: 3em;
     gap: 1em;
     flex-direction: column;
 }
@@ -32,7 +77,10 @@
 
 .col {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 1em;
+    height: 300px;
     border-radius: 1em;
     background-color: var(--card-color);
     transition: 0.3s;
@@ -41,6 +89,36 @@
     &:hover {
         border: 4px solid #4f7780;
     }
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.highlight {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+
+    a {
+        margin-left: 4px;
+
+        &:hover {
+            background-color: var(--tools-bg-color);
+            border-radius: 1em;
+        }
+    }
+
 }
 
 @media (max-width: 768px) {

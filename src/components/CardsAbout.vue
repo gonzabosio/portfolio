@@ -5,12 +5,15 @@ import Gmail from './Contact/Gmail.vue';
 import LinkedIn from './Contact/LinkedIn.vue';
 import Resume from './Resume.vue';
 import Education from './Education.vue';
+import Personal from './Personal.vue';
 </script>
 
 <template>
     <div class="container">
         <div class="row-container">
-            <div class="col row-1-col-1"></div>
+            <div class="col row-1-col-1">
+                <Personal />
+            </div>
             <div class="col row-1-col-2">
                 <a class="col-box" href="https://github.com/gonzabosio" target="_blank">
                     <GitHub />
