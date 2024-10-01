@@ -12,6 +12,7 @@
   --card-color: #043c49;
   --button-text-color: #F0EDCC;
   --navbar-bg-color: #043c49;
+  --tools-bg-color: #112b30;
 }
 
 /* Light theme  */
@@ -21,6 +22,7 @@
   --card-color: #c5e7e7;
   --button-text-color: #c5e7e7;
   --navbar-bg-color: #c5e7e7;
+  --tools-bg-color: #a6d7e0;
 }
 
 body {
@@ -58,4 +60,9 @@ button {
   &:hover {
     background-color: #3d6870;
   }
+}
+
+h2 {
+  margin-left: 18px;
+  font-size: 32px;
 }

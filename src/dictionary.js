@@ -3,13 +3,15 @@ export default {
         title: 'My Portfolio',
         button: 'Button',
         me: 'About Me',
-        projects: 'Projects'
+        projects: 'Projects',
+        tools: 'Languages and Tools'
     },
     es: {
         title: 'Mi Portafolio',
         button: 'Botón',
         me: 'Sobre mí',
-        projects: 'Proyectos'
+        projects: 'Proyectos',
+        tools: 'Lenguajes y herramientas'
 
     }
 }

@@ -35,6 +35,12 @@
     padding: 1em;
     border-radius: 1em;
     background-color: var(--card-color);
+    transition: 0.3s;
+    border: 4px solid transparent;
+
+    &:hover {
+        border: 4px solid #4f7780;
+    }
 }
 
 @media (max-width: 768px) {
