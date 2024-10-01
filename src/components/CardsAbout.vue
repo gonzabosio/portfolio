@@ -1,5 +1,8 @@
-<script setup lang="ts">
+<script setup>
 import DevTools from './DevTools.vue';
+import GitHub from './Contact/GitHub.vue';
+import Gmail from './Contact/Gmail.vue';
+import LinkedIn from './Contact/LinkedIn.vue';
 </script>
 
 <template>
@@ -7,9 +10,15 @@ import DevTools from './DevTools.vue';
         <div class="row-container">
             <div class="col row-1-col-1"></div>
             <div class="col row-1-col-2">
-                <div class="col-box"></div>
-                <div class="col-box"></div>
-                <div class="col-box"></div>
+                <a class="col-box" href="https://github.com/gonzabosio" target="_blank">
+                    <GitHub />
+                </a>
+                <a class="col-box" href="https://www.linkedin.com/in/gonzaloabosio" target="_blank">
+                    <LinkedIn />
+                </a>
+                <a class="col-box" href="mailto:gonzaabosio@gmail.com" target="_blank">
+                    <Gmail />
+                </a>
             </div>
         </div>
         <div class="row-container">
@@ -74,10 +83,11 @@ import DevTools from './DevTools.vue';
     flex-direction: column;
     align-items: center;
     border: none;
-
 }
 
 .col-box {
+    display: flex;
+    align-items: center;
     border-radius: 1em;
     width: 100%;
     flex: 1;
@@ -85,6 +95,8 @@ import DevTools from './DevTools.vue';
     background-color: var(--card-color);
     border: 4px solid transparent;
     transition: 0.3s;
+    text-decoration: none;
+    color: var(--text-color);
 
     &:hover {
         border: 4px solid #4f7780;
