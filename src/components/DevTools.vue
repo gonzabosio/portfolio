@@ -204,4 +204,9 @@ const { t } = useI18n()
         margin-top: 8px;
     }
 }
+
+h2 {
+    margin-left: 18px;
+    font-size: 26px;
+}
 </style>

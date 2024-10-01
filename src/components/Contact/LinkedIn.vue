@@ -12,4 +12,9 @@
 svg {
     margin-left: 12px;
 }
+
+h2 {
+    margin-left: 18px;
+    font-size: 26px;
+}
 </style>
