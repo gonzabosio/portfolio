@@ -1,7 +1,13 @@
+<script setup>
+import { useI18n } from 'vue-i18n';
+const { t } = useI18n()
+</script>
+
 <template>
     <div>
         <h1>Gonzalo Bosio</h1>
-        <h2>{{ '</>' }} Backend Developer</h2>
+        <h2>{{ '</> ' + t('backend') }}</h2>
+        <p>{{ t('interests') }}</p>
     </div>
 </template>
 
@@ -10,18 +16,22 @@ div {
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 18px;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 h1 {
     font-size: 48px;
     margin: 0;
-    margin-left: 16px;
-    margin-top: 16px;
 }
 
 h2 {
-    font-size: 32px;
-    margin-left: 16px;
-    margin-top: 16px;
+    font-size: 30px;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
 }
 </style>

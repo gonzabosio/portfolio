@@ -15,6 +15,7 @@ const { t } = useI18n()
 <style scoped>
 div {
     margin-left: 18px;
+    margin-right: 18px;
 }
 
 h2 {

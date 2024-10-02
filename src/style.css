@@ -39,16 +39,6 @@ body {
   box-sizing: border-box;
 }
 
-.card {
-  width: fit-content;
-  padding: 40px;
-  border-radius: 12px;
-  background-color: var(--card-color);
-  margin-bottom: 12px;
-  transition: 0.3s;
-  box-sizing: border-box;
-}
-
 button {
   color: var(--button-text-color);
   background-color: #4f7780;
@@ -58,6 +48,6 @@ button {
   font-weight: 600;
 
   &:hover {
-    background-color: #3d6870;
+    background-color: #355f66;
   }
 }

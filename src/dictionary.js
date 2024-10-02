@@ -18,7 +18,9 @@ export default {
         patcher: {
             a: 'Map-based Go package to detect data differences in JSON format and generate PostgreSQL update queries.',
             b: 'First method catch differences of complex json structures such as arrays or nested json. The second method generates update queries from flat data structure to avoid code boilerplate (e.g check if new data has empty fields) and not depend on one default query which could execute innecessary operations.'
-        }
+        },
+        backend: 'Backend Developer',
+        interests: 'Focused in Go but always open to learn new technologies and adapt to different environments. Interested in applying my skills to meaningful projects and enthusiastic about contributing to a team where I can grow and expand my knowledge.',
     },
     es: {
         title: 'Mi Portafolio',
@@ -38,7 +40,9 @@ export default {
         },
         patcher: {
             a: 'Paquete de Go basado en mapas para detectar diferencias de datos en formato JSON y generar consultas de actualización de PostgreSQL.',
-            b: 'El primer método detecta las diferencias entre estructuras JSON complejas, como matrices o JSON anidados. El segundo método genera consultas de actualización a partir de una estructura de datos plana para evitar el código repetitivo (por ejemplo, comprobar si los datos nuevos tienen campos vacíos) y no depender de una consulta predeterminada que podría ejecutar operaciones innecesarias.'
-        }
+            b: 'El primer método detecta las diferencias entre estructuras JSON complejas, como arreglos o JSON anidados. El segundo método genera consultas de actualización a partir de una estructura de datos plana para evitar el código repetitivo (por ejemplo, comprobar si los datos nuevos tienen campos vacíos) y no depender de una consulta predeterminada que podría ejecutar operaciones innecesarias.'
+        },
+        backend: 'Desarrollador Backend',
+        interests: 'Centrado en Go pero siempre abierto a aprender nuevas tecnologías y adaptarme a diferentes entornos. Buscando aplicar mis habilidades en proyectos significativos y entusiasmado por contribuir en un equipo donde pueda crecer y expandir mi conocimiento.'
     }
 }
