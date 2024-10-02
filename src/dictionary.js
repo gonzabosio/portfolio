@@ -16,7 +16,7 @@ export default {
             c: 'This project made me consider the work of the frontend handling the responses what comes from the server, so it allowed me get into the details of the API behavior and preventing unwanted errors.'
         },
         patcher: {
-            a: 'Map-based Go package to detect data differences in JSON format and generate PostgreSQL update queries.',
+            a: 'Map-based Go package to detect data differences between to structures in JSON format and generate PostgreSQL update queries.',
             b: 'First method catch differences of complex json structures such as arrays or nested json. The second method generates update queries from flat data structure to avoid code boilerplate (e.g check if new data has empty fields) and not depend on one default query which could execute innecessary operations.'
         },
         backend: 'Backend Developer',
@@ -39,7 +39,7 @@ export default {
             c: 'Este proyecto me hizo considerar el trabajo del frontend al manejar las respuestas que llegan desde el servidor, por lo que me permitió entrar en detalles del comportamiento de la API y prevenir errores no deseados.'
         },
         patcher: {
-            a: 'Paquete de Go basado en mapas para detectar diferencias de datos en formato JSON y generar consultas de actualización de PostgreSQL.',
+            a: 'Paquete de Go basado en mapas para detectar diferencias de datos entre dos estructuras en formato JSON y generar consultas de actualización de PostgreSQL.',
             b: 'El primer método detecta las diferencias entre estructuras JSON complejas, como arreglos o JSON anidados. El segundo método genera consultas de actualización a partir de una estructura de datos plana para evitar el código repetitivo (por ejemplo, comprobar si los datos nuevos tienen campos vacíos) y no depender de una consulta predeterminada que podría ejecutar operaciones innecesarias.'
         },
         backend: 'Desarrollador Backend',

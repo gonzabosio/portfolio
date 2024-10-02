@@ -31,7 +31,7 @@ import Personal from './Personal.vue';
                 <div class="col-box">
                     <Education />
                 </div>
-                <a class="col-box" href="cv.pdf" download>
+                <a class="col-box" id="resume" href="cv.pdf" download>
                     <Resume />
                 </a>
             </div>
@@ -46,8 +46,8 @@ import Personal from './Personal.vue';
 .container {
     display: flex;
     flex-direction: column;
-    width: 1100px;
-    height: 650px;
+    width: 90em;
+    height: auto;
     border-radius: 1em;
     padding: 2em;
     gap: 1em;
@@ -124,6 +124,8 @@ import Personal from './Personal.vue';
     flex: 3;
 }
 
+
+
 @media (max-width: 768px) {
     .row-container {
         flex-direction: column;
@@ -139,6 +141,16 @@ import Personal from './Personal.vue';
     .col-box {
         flex: 1;
         margin: 0;
+    }
+
+    #resume {
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .col-box {
+        justify-content: center;
     }
 }
 </style>

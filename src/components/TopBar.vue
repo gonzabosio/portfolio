@@ -68,7 +68,7 @@ import { ref } from 'vue';
         text-align: center;
         border: 4px solid var(--card-color);
         border-radius: 60px;
-        transition: 0.5s;
+        transition: 0.3s;
 
         &:hover {
             border-color: var(--text-color);
@@ -87,7 +87,7 @@ import { ref } from 'vue';
         text-align: center;
         border: 4px solid var(--card-color);
         border-radius: 60px;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 }
 

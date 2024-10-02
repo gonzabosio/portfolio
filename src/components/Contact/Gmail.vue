@@ -17,4 +17,14 @@ h2 {
     margin-left: 18px;
     font-size: 26px;
 }
+
+@media (max-width: 600px) {
+    svg {
+        margin: 0;
+    }
+
+    h2 {
+        display: none;
+    }
+}
 </style>

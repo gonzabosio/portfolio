@@ -59,10 +59,10 @@ import GitHubRepo from './Links/GitHubRepo.vue';
 <style scoped>
 .container {
     display: flex;
-    width: 1200px;
+    width: 90em;
     height: fit-content;
+    padding: 2em;
     border-radius: 1em;
-    padding: 3em;
     gap: 1em;
     flex-direction: column;
 }
@@ -93,6 +93,7 @@ import GitHubRepo from './Links/GitHubRepo.vue';
 
 h2 {
     margin: 0;
+    font-size: 26px;
 }
 
 p {
@@ -100,10 +101,10 @@ p {
     margin-top: 4px;
 }
 
-.highlight {
+/* .highlight {
     font-size: 16px;
     font-weight: 600;
-}
+} */
 
 .links {
     display: flex;
@@ -112,16 +113,17 @@ p {
 
     a {
         margin-left: 4px;
+        transition: 0.3s;
+        border-radius: 1em;
 
         &:hover {
             background-color: var(--tools-bg-color);
-            border-radius: 1em;
         }
     }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
     .row-container {
         flex-direction: column;
     }
